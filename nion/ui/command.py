@@ -173,9 +173,6 @@ def bootstrap_main(args: typing.Sequence[typing.Any]) -> typing.Tuple[typing.Opt
     Main function explicitly called from the C++ code.
     Return the main application object.
     """
-    version_info = sys.version_info
-    if version_info.major != 3 or version_info.minor < 6:
-        return None, "python36"
     # extract any "--key[=value]" style flags (e.g. the non-standard, dev/test only "--canvas"
     # flag) and forward them as bootstrap args. strip them out first so they do not interfere
     # with the normal positional argument handling (e.g. args[1] being a module path/package).
