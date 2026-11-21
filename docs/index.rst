@@ -103,8 +103,8 @@ Configure your virtual environment with ``nionui`` and ``nionui-tool`` using pip
 
 .. code-block:: zsh
 
-    pyenv install 3.13.11
-    pyenv virtualenv 3.13.11 nionui-dev
+    pyenv install 3.14.10
+    pyenv virtualenv 3.14.10 nionui-dev
     pyenv activate nionui-dev
     python -m pip install nionui nionui-tool
 
@@ -124,7 +124,7 @@ Create a new virtual environment with ``uv venv <env-name>`` where env-name is t
 
       .. code-block:: powershell
 
-         uv python install 3.13.11
+         uv python install 3.14.10
          uv venv nionui-dev
          .venv\nionui-dev\Scripts\activate
          python -m pip install nionui nionui-tool
@@ -136,7 +136,7 @@ Create a new virtual environment with ``uv venv <env-name>`` where env-name is t
 
       .. code-block:: bash
 
-         uv python install 3.13.11
+         uv python install 3.14.10
          uv venv nionui-dev
          source .venv/nionui-dev/bin/activate
          python -m pip install nionui nionui-tool
